@@ -1,7 +1,11 @@
 import React from "react";
 
 const Assesement = () => {
-  return <div></div>;
+  return (
+    <>
+      <div></div>
+    </>
+  );
 };
 
 export default Assesement;

@@ -33,7 +33,8 @@ const data = [
   { name: "25", uv: 2780 },
   { name: "27", uv: 1890 },
 ];
-const Dashboard = ({ percentage }) => {
+const Dashboard = ({ percentage, rating }) => {
+  const totalStars = 5;
   return (
     <>
       <Container fluid className="container-bashboard">
@@ -47,7 +48,10 @@ const Dashboard = ({ percentage }) => {
                 </span>
 
                 <p>Total Orders</p>
-                <h1>75</h1>
+                <div className="d-flex">
+                  <h6>75</h6>
+                  <p>3%</p>
+                </div>
               </div>
               <div className="bg-dark text-light font  card">
                 <span className="bg-success">
@@ -55,7 +59,7 @@ const Dashboard = ({ percentage }) => {
                 </span>
 
                 <p>Total Delivered</p>
-                <h2>70</h2>
+                <h6>70</h6>
               </div>
               <div className="bg-dark text-light  card">
                 <span className="bg-danger">
@@ -63,7 +67,7 @@ const Dashboard = ({ percentage }) => {
                 </span>
 
                 <p>Total Cancelled</p>
-                <h2>05</h2>
+                <h6>05</h6>
               </div>
               <div className="bg-dark text-light  card">
                 <span className="bg-pink">
@@ -71,14 +75,14 @@ const Dashboard = ({ percentage }) => {
                 </span>
 
                 <p>Total Revenue</p>
-                <h2>$12k</h2>
+                <h6>$12k</h6>
               </div>
             </div>
             <div className="parent-card">
               <div className="bg-dark text-light card1 d-flex justify-content-around">
                 <div className="">
                   <p>Net Profit</p>
-                  <h2>$6759.25</h2>
+                  <h6>$6759.25</h6>
                 </div>
 
                 <div>
@@ -175,7 +179,19 @@ const Dashboard = ({ percentage }) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Wade Warren</td>
+                    <td>
+                      {" "}
+                      <span>
+                        <img
+                          className="imgcircle"
+                          width={"40px"}
+                          height={"40px"}
+                          src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                          alt=""
+                        />
+                      </span>
+                      &nbsp; &nbsp; Wade Warren
+                    </td>
                     <td>15478256</td>
                     <td>$124.00</td>
                     <td>
@@ -184,7 +200,19 @@ const Dashboard = ({ percentage }) => {
                     </td>
                   </tr>
                   <tr>
-                    <td>Jane Cooper</td>
+                    <td>
+                      {" "}
+                      <span>
+                        <img
+                          className="imgcircle"
+                          width={"40px"}
+                          height={"40px"}
+                          src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                          alt=""
+                        />
+                      </span>
+                      &nbsp; &nbsp; Jane Cooper
+                    </td>
                     <td>48965786</td>
                     <td>$365.02</td>
                     <td>
@@ -193,7 +221,19 @@ const Dashboard = ({ percentage }) => {
                     </td>
                   </tr>
                   <tr>
-                    <td>Guy Hawkins</td>
+                    <td>
+                      {" "}
+                      <span>
+                        <img
+                          className="imgcircle"
+                          width={"40px"}
+                          height={"40px"}
+                          src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                          alt=""
+                        />
+                      </span>
+                      &nbsp; &nbsp; Guy Hawkins
+                    </td>
                     <td>78958215</td>
                     <td>$45.88</td>
                     <td>
@@ -202,7 +242,19 @@ const Dashboard = ({ percentage }) => {
                     </td>
                   </tr>
                   <tr>
-                    <td>Kristin Waston</td>
+                    <td>
+                      {" "}
+                      <span>
+                        <img
+                          className="imgcircle"
+                          width={"40px"}
+                          height={"40px"}
+                          src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                          alt=""
+                        />
+                      </span>
+                      &nbsp; &nbsp; Kristin Waston
+                    </td>
                     <td>20965732</td>
                     <td>$65.00</td>
                     <td>
@@ -211,7 +263,18 @@ const Dashboard = ({ percentage }) => {
                     </td>
                   </tr>
                   <tr>
-                    <td>Cody Fisher</td>
+                    <td>
+                      <span>
+                        <img
+                          className="imgcircle"
+                          width={"40px"}
+                          height={"40px"}
+                          src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                          alt=""
+                        />
+                      </span>{" "}
+                      &nbsp; &nbsp; Cody Fisher
+                    </td>
                     <td>95715620</td>
                     <td>$545.00</td>
                     <td>
@@ -220,7 +283,19 @@ const Dashboard = ({ percentage }) => {
                     </td>
                   </tr>
                   <tr>
-                    <td>Savannah</td>
+                    <td>
+                      {" "}
+                      <span>
+                        <img
+                          className="imgcircle"
+                          width={"40px"}
+                          height={"40px"}
+                          src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                          alt=""
+                        />
+                      </span>
+                      &nbsp; &nbsp; Savannah
+                    </td>
                     <td>78514568</td>
                     <td>$128.20</td>
                     <td>
@@ -234,9 +309,31 @@ const Dashboard = ({ percentage }) => {
 
             <div className="bg-dark text-light customer-feed ">
               <div className="last-content">
-                <h6>Customer's Feedback</h6>
+                <h6>
+                  {" "}
+                  <span>
+                    <img
+                      className="imgcircle"
+                      width={"40px"}
+                      height={"40px"}
+                      src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                      alt=""
+                    />
+                  </span>{" "}
+                  Customer's Feedback
+                </h6>
                 <img src="" alt="" />
                 <p>Jenney Wiston</p>
+                <div className="star-rating">
+                  {[...Array(totalStars)].map((star, index) => (
+                    <span
+                      key={index}
+                      className={index < rating ? "star filled" : "star"}
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
                 <p>
                   The food was execellent and so was the service.i had the
                   mushroom risotto with scallops which was awesome.i had a
@@ -247,6 +344,16 @@ const Dashboard = ({ percentage }) => {
 
               <div className="last-content">
                 <p>Dianne Russell</p>
+                <div className="star-rating">
+                  {[...Array(totalStars)].map((star, index) => (
+                    <span
+                      key={index}
+                      className={index < rating ? "star filled" : "star"}
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
 
                 <p>
                   We enjoyed the eggs Benedict serverd on homemade focaccia
@@ -256,6 +363,16 @@ const Dashboard = ({ percentage }) => {
 
               <div className="last-content">
                 <p>Devon Lane</p>
+                <div className="star-rating">
+                  {[...Array(totalStars)].map((star, index) => (
+                    <span
+                      key={index}
+                      className={index < rating ? "star filled" : "star"}
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
 
                 <p>
                   Normally wings are wings but theirs are lean meaty and tender

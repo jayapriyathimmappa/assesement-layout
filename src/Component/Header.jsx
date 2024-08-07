@@ -51,6 +51,17 @@ function Header() {
                 <i class="bi bi-bell-fill"></i>
               </span>
             </Container>
+            <Container className="text-light header-icon">
+              <span>
+                <img
+                  className="imgcircle"
+                  width={"40px"}
+                  height={"40px"}
+                  src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?w=126&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                />
+              </span>
+            </Container>
           </Navbar.Brand>
         </Navbar>
         <br />

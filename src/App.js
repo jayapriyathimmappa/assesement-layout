@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="app-parent">
-        <Dashboard className="dash" percentage={70} />
+        <Dashboard className="dash" percentage={70} rating={3} />
         <Sidebar className="side" />
       </div>
     </div>
